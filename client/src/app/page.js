@@ -181,15 +181,15 @@ export default function Home() {
         </h3>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
           <div className="flex flex-col">
-            <label className="text-xs font-bold text-gray-600 mb-1">PLACA</label>
-            <input placeholder="LLL-NNNN" maxLength={8} value={form.placa} onChange={handlePlacaChange} className="p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none w-full uppercase" />
+            <label className="text-xs font-bold text-gray-600 mb-1">PLACA DO VEÍCULO</label>
+            <input placeholder="" maxLength={8} value={form.placa} onChange={handlePlacaChange} className="p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none w-full uppercase" />
           </div>
           <div className="flex flex-col">
             <label className="text-xs font-bold text-gray-600 mb-1">CPF DO MOTORISTA</label>
             <input placeholder="000.000.000-00" maxLength={14} value={form.cpf} onChange={handleCpfChange} className="p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none w-full" />
           </div>
           <div className="flex flex-col md:col-span-1">
-            <label className="text-xs font-bold text-gray-600 mb-1">NOME MOTORISTA</label>
+            <label className="text-xs font-bold text-gray-600 mb-1">NOME DO MOTORISTA</label>
             <input placeholder="Nome Completo" value={form.motorista} onChange={(e) => setForm({...form, motorista: e.target.value})} className="p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none w-full" />
           </div>
           <div className="flex flex-col">
@@ -217,7 +217,7 @@ export default function Home() {
 
       <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
         <div className="p-4 bg-gray-50 border-b flex flex-col sm:flex-row justify-between items-center gap-4">
-            <h3 className="text-xl font-bold text-gray-700">Caminhões no Pátio</h3>
+            <h3 className="text-xl font-bold text-gray-700">Veículos no Pátio</h3>
             
             <div className="flex gap-2 w-full sm:w-auto">
                 <input 
