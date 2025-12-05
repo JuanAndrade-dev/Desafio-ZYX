@@ -1,0 +1,17 @@
+# Ignorar dependências em qualquer pasta (Client ou Server)
+node_modules/
+**/node_modules/
+
+# Ignorar arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de variáveis de ambiente (Segurança)
+.env
+.env.local
+
+# Ignorar pastas de build do Next.js
+.next/
+out/
+build/
+dist/
